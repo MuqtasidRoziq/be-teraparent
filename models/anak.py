@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from base_model import ModelDasar
+from .base_model import ModelDasar
 from config.config import db
 
 

@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-from base_model import ModelDasar
+from .base_model import ModelDasar
 from config.config import db
 
 

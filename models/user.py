@@ -1,6 +1,6 @@
 import bcrypt
 from datetime import datetime
-from base_model import ModelDasar, buat_uuid
+from .base_model import ModelDasar, buat_uuid
 from config.config import db
 
 class User(ModelDasar):

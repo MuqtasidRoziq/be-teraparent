@@ -1,17 +1,17 @@
 # 1. Model akun & autentikasi (tidak bergantung model lain)
-from user import User, RefreshToken, OtpToken, AuthLog
+from .user import User, RefreshToken, OtpToken, AuthLog
 
 # 2. Model anak (bergantung pada User)
-from anak import Anak, CatatanTumbuh
+from .anak import Anak, CatatanTumbuh
 
 # 3. Model psikiater (tidak bergantung model lain)
-from psikiater import Psikiater, Booking
+from .psikiater import Psikiater, Booking
 
 # 4. Model screening (bergantung pada Anak dan Psikiater)
-from screening import PertanyaanScreening, Screening, JawabanScreening, Rekomendasi
+from .screening import PertanyaanScreening, Screening, JawabanScreening, Rekomendasi
 
 # 5. Model aktivitas (bergantung pada Anak)
-from aktivitas import TemplateAktivitas, Aktivitas
+from .aktivitas import TemplateAktivitas, Aktivitas
 
 
 # ── Daftar semua tabel (untuk referensi) ──────────────────────────────
